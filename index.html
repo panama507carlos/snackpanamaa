@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snack Panamá — Demo Final</title>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+
+  <!-- Nota: el CSS va en el panel CSS -->
+</head>
+<body>
+  <div class="ia-banner">🔬 .</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://i.postimg.cc/0N87dGFX/1000142945.jpg" class="logo" alt="Logo Snack Panamá">
+        <div>
+          <h1>Snack Panamá</h1>
+          <p class="tagline">Dale un momento dulce a tu día</p>
+        </div>
+      </div>
+
+      <div id="menuToggle" class="menu-toggle">☰</div>
+
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#contacto">Contacto</a>
+
+        <button id="themeToggle" class="icon-btn" title="Cambiar tema">🌓</button>
+        <button id="cart-toggle" class="cart-btn" title="Abrir carrito">🧺 <span id="cart-count">0</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO -->
+    <section id="inicio" class="hero section">
+      <div class="hero-left">
+        <h2>Galletas Premium con recomendaciones inteligentes</h2>
+        <p class="lead">Este sitio integra una IA demo que simula personalización; preparado para integración real.</p>
+        <div class="hero-cta">
+          <a href="#productos" class="btn primary">Ver catálogo</a>
+          <button id="recommend-global" class="btn outline">IA: Recomiéndame</button>
+        </div>
+
+        <ul class="features">
+          <li>Diseño responsive</li>
+          <li>Carrito persistente</li>
+          <li>Demo IA integrada</li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <img src="https://i.postimg.cc/FKyNm3Kk/licensed-image.jpg" alt="Hero">
+      </div>
+    </section>
+
+    <!-- PRODUCTOS (AMPLIADA) -->
+    <section id="productos" class="section">
+      <div class="section-header">
+        <h2>Nuestras galletas</h2>
+
+        <div class="controls">
+          <input id="search" type="search" placeholder="Buscar galletas..." />
+          <select id="filter">
+            <option value="all">Todos</option>
+            <option value="almendra">Almendra</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="vegan">Vegano</option>
+            <option value="avena">Avena</option>
+            <option value="chispas">Chispas de chocolate</option>
+          </select>
+
+          <button id="recommend-btn" class="btn small outline">IA: Filtrar automáticamente</button>
+        </div>
+      </div>
+
+      <div id="product-grid" class="product-grid"></div>
+    </section>
+
+    <!-- NOSOTROS (CORREGIDO: solo info de la marca) -->
+    <section id="nosotros" class="section card about">
+      <h2>Quiénes somos</h2>
+      <p> Somos Snack Panamá, una marca dedicada a crear galletas artesanales y productos dulces elaborados con ingredientes de alta calidad. Nuestro objetivo es ofrecer sabores únicos, una experiencia deliciosa y un servicio que combine tradición con tecnología.
+Creemos en la innovación, el buen sabor y la conexión con nuestros clientes.
+
+Nuestra misión: endulzar el día de cada persona con productos hechos con pasión.
+Nuestra visión: convertirnos en la marca de galletas favorita de Panamá..</p>
+
+      <div class="persona">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQWQdMekcMRSOicJkerSo8vT-490U6B6a7pw&s" alt="Valeria">
+        <div>
+          <h4>Buscamos la calidad</h4>
+          <p>queremos proporcionarles a cada cliente que pruebe galletas a su gusto</p>
+        </div>
+      </div>
+    </section>
+<!-- CLIENTES (arregladas las imágenes y conservadas las tarjetas) -->
+<section id="clientes" class="section card enhanced-clients">
+  <h2>Clientes objetivo & Argumentos de venta</h2>
+  <p class="muted">Segmentación enfocada en cómo Snack Panamá conecta con sus consumidores.</p>
+
+  <div class="clients-grid">
+    <article class="client-card">
+      <img src="https://i.imgur.com/Rd4BgJW.jpeg" alt="Joven profesional">
+      <div class="client-body">
+        <h4>Amigos que buscan snacks rápidos</h4>
+        <p class="small">Compran para compartir algo rápido durante reuniones o salidas.</p>
+     
+      </div>
+    </article>
+
+    <article class="client-card">
+      <img src="https://i.imgur.com/uMjjoQL.png" alt="Estudiante">
+      <div class="client-body">
+        <h4>Estudiantes con antojos</h4>
+        <p class="small">Buscan opciones económicas, fáciles de pedir y con buen sabor.</p>
+       
+      </div>
+    </article>
+
+    <article class="client-card">
+      <img src="https://i.imgur.com/L0nUtPK.png" alt="Familias">
+      <div class="client-body">
+        <h4>Familias para compartir</h4>
+        <p class="small">Prefieren porciones grandes para disfrutar en casa o en reuniones.</p>
+       
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- CLIENTES FELICES -->
+<section id="portafolio" class="section card enhanced-portfolio">
+  <h2>Clientes felices</h2>
+  <p class="muted">Opiniones reales de consumidores satisfechos.</p>
+
+  <div class="portfolio-grid">
+
+    <article class="portfolio-card">
+      <div class="pf-img-box">
+        <img src="https://i.postimg.cc/hjpxjfbf/unnamed-(4).jpg" alt="Cliente feliz 1">
+      </div>
+      <h4>“Las mejores galletas que he probado…”</h4>
+      <p class="small">— Mariana G.</p>
+    </article>
+
+    <article class="portfolio-card">
+      <div class="pf-img-box">
+        <img src="https://i.postimg.cc/gj3xhj3N/unnamed-(6).jpg" alt="Cliente feliz 2">
+      </div>
+      <h4>“Excelente presentación…”</h4>
+      <p class="small">— Saul P.</p>
+    </article>
+
+    <article class="portfolio-card">
+      <div class="pf-img-box">
+        <img src="https://i.postimg.cc/bvGNbdht/unnamed-(7).jpg" alt="Cliente feliz 3">
+      </div>
+      <h4>“Buen precio y buen sabor…”</h4>
+      <p class="small">— Sofía R.</p>
+    </article>
+
+  </div>
+</section>
+
+
+
+    <!-- DEMO IA + CHATBOT (INTEGRADO) -->
+    <section id="demo-ia" class="section card ia-demo">
+      <h2>Demostración de IA – Clasificación en Tiempo Real & Chatbot</h2>
+      <p class="muted">Modelo hospedado en Teachable Machine y chatbot simulado para recomendaciones por texto.</p>
+
+      <div class="ia-row">
+        <div class="ia-left">
+          <button id="btnIniciarIA" class="btn primary">Iniciar IA</button>
+          <button id="btnStopIA" class="btn outline">Detener IA</button>
+          <button id="btnDetectNow" class="btn outline">Detectar ahora</button>
+          <button id="btnUsePrediction" class="btn outline">Usar para recomendar (escribe)</button>
+
+          <div id="webcam-container" class="webcam-box"></div>
+        </div>
+
+        <div class="ia-right">
+          <div id="label-container" class="label-box"></div>
+
+          <!-- Chatbot area -->
+          <div class="chatbox">
+            <div id="chat-messages" class="chat-messages" aria-live="polite"></div>
+
+            <form id="chat-form" class="chat-form" onsubmit="return false;">
+              <input id="chat-input" type="text" placeholder="Escribe tu pregunta o describe una galleta..." autocomplete="off">
+              <button id="chat-send" class="btn primary" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO (mejorado) -->
+    <section id="contacto" class="section card contact-card">
+      <h2>Contacto</h2>
+      <p class="muted">Escríbenos y te responderemos (demo).</p>
+
+      <form id="contact-form" class="form">
+        <div class="form-row">
+          <div class="field">
+            <label for="c-name">Nombre</label>
+            <input type="text" id="c-name" placeholder="Tu nombre" required>
+          </div>
+          <div class="field">
+            <label for="c-email">Correo</label>
+            <input type="email" id="c-email" placeholder="tu@correo.com" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="c-msg">Mensaje</label>
+          <textarea id="c-msg" rows="4" placeholder="Escribe tu consulta..." required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Enviar</button>
+          <button class="btn outline" id="contact-clear" type="button">Limpiar</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- CARRITO (aside) -->
+  <aside id="cart" class="cart">
+    <div class="cart-header">
+      <h3>Tu carrito</h3>
+      <button id="cart-close" class="icon-btn">✕</button>
+    </div>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-footer">
+      <p>Total: $<span id="cart-total">0.00</span></p>
+      <button class="btn primary" id="checkout-btn">Pagar (Demo)</button>
+      <button class="btn outline" id="clear-cart">Vaciar</button>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Snack Panamá – Proyecto Universitario</p>
+    <div class="social">
+      <a href="https://www.tiktok.com/@snack_panama" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/snack__panama?igsh=MXdsanN2Z2R2Z3JwZg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <!-- Link to your uploaded file (local path) -->
+  <p style="text-align:center; font-size:13px; margin:14px 0;">
+    Descargar modelo de negocios (si lo necesita): 
+    <a href="/mnt/data/Modelo de negocios.docx" download> /mnt/data/Modelo de negocios.docx </a>
+  </p>
+
+  <!-- Nota: JS va en el panel JS -->
+</body>
+    </html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
